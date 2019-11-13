@@ -31,21 +31,27 @@ class Library extends React.Component {
   render() {
     const { books } = this.props;
     return (
-      <div>
-        <h1>The library is {this.state.open ? "open" : "closed"} </h1>
-        <button className="button" onClick={this.toggleOpenClosed}>
-          change state
-        </button>
-        {books.map((book, i) => (
-          <Book
-            key={i}
-            title={book.title}
-            author={book.author}
-            pages={book.pages}
-            freeBookmark={this.state.freeBookmark}
-          />
-        ))}
-      </div>
+      <>
+        <div className="button-center">
+          <h1 className="main-title">
+            The library is {this.state.open ? "open" : "closed"}{" "}
+          </h1>
+          <button className="button" onClick={this.toggleOpenClosed}>
+            change state
+          </button>
+        </div>
+        <div className="body">
+          {books.map((book, i) => (
+            <Book
+              key={i}
+              title={book.title}
+              author={book.author}
+              pages={book.pages}
+              freeBookmark={this.state.freeBookmark}
+            />
+          ))}
+        </div>
+      </>
     );
   }
 }

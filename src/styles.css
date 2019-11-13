@@ -1,6 +1,15 @@
-.App {
+.body {
+  display: flex;
   font-family: sans-serif;
+}
+.main-title {
   text-align: center;
+}
+.button-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .button {
   border: none;
@@ -11,4 +20,20 @@
   color: #ffffff;
   background-color: seagreen;
   cursor: pointer;
+}
+
+.card {
+  border: 1px solid #ffffff;
+  margin: 2rem;
+  padding: 10px;
+  box-shadow: 5px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  width: 20rem;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.2, 1.2);
 }
