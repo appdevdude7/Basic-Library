@@ -51,6 +51,11 @@ class Library extends React.Component {
             />
           ))}
         </div>
+        <div className="button-center">
+          <h2>Let us know what other book you want us to add:</h2>
+          <input className="input" type="text" />
+          <button className="button">Submit</button>
+        </div>
       </>
     );
   }

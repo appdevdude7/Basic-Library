@@ -11,6 +11,11 @@
   justify-content: center;
   flex-direction: column;
 }
+.input {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
 .button {
   border: none;
   padding: 10px;
@@ -20,6 +25,7 @@
   color: #ffffff;
   background-color: seagreen;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 .card {
