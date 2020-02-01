@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import Book from "./Book";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./styles.css";
+import Library from "./Library";
 
 let bookList = [
   { title: "Harry Potter", author: "J K Rowling", pages: 463 },
@@ -16,6 +16,7 @@ let bookList = [
   { title: "The Year of Magical Thinking", author: "Joan Didion", pages: 475 }
 ];
 
+/*
 class Library extends React.Component {
   state = {
     open: false,
@@ -60,6 +61,6 @@ class Library extends React.Component {
     );
   }
 }
-
+ */
 const rootElement = document.getElementById("root");
 ReactDOM.render(<Library books={bookList} />, rootElement);
